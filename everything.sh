@@ -25,7 +25,6 @@ y|Y ) echo Installing AMD drivers...;
     wget https://github.com/GPUOpen-Drivers/AMDVLK/releases/download/v-2021.Q3.7/amdvlk_2021.Q3.7_amd64.deb --progress=bar:force 2>&1 | tail -f -n +8;
     sudo apt install -y "/home/$USER/amdvlk_2021.Q3.7_amd64.deb" > /dev/null 2>&1;
     rm amdvlk_2021.Q3.7_amd64.deb
-    sudo add-apt-repository -y ppa:oibaf/graphics-drivers > /dev/null 2>&1;
     sudo apt update -y > /dev/null 2>&1;
     sudo apt upgrade -y > /dev/null 2>&1;
     cd ~ > /dev/null 2>&1;
